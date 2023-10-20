@@ -3,13 +3,12 @@ import '../styles/hero.css';
 
 function Hero() {
   const [particles, setParticles] = useState([]);
-  const [isMouseInside, setIsMouseInside] = useState(false);
 
   // Function to create particles
   const createParticle = () => {
     const x = Math.random() * window.innerWidth;
     const y = Math.random() * window.innerHeight;
-    const size = Math.random() * 10 + 3; // Adjust the size range as needed
+    const size = Math.random() * 30 + 3; // Adjust the size range as needed
     const opacity = Math.random() * 0.7 + 0.3; // Adjust the opacity range as needed
     const particle = {
       id: Date.now(),
@@ -26,45 +25,24 @@ function Hero() {
   // Function to update particles' positions
   const updateParticles = () => {
     setParticles((prevState) =>
-      prevState.map((particle) => {
-        return {
-          ...particle,
-          x: particle.x + particle.speedX,
-          y: particle.y + particle.speedY,
-        };
-      })
+      prevState.map((particle) => ({
+        ...particle,
+        x: particle.x + particle.speedX,
+        y: particle.y + particle.speedY,
+      }))
     );
-  };
-
-  // Function to handle mouse move inside the hero-main
-  const handleMouseMove = (e) => {
-    if (isMouseInside) {
-      createParticle();
-    }
-  };
-
-  // Function to handle mouse entering the hero-main
-  const handleMouseEnter = () => {
-    setIsMouseInside(true);
-  };
-
-  // Function to handle mouse leaving the hero-main
-  const handleMouseLeave = () => {
-    setIsMouseInside(false);
   };
 
   // Create particles continuously
   useEffect(() => {
     const interval = setInterval(() => {
-      if (isMouseInside) {
-        createParticle();
-      }
-    }, 100);
+      createParticle();
+    }, 100); // Adjust the interval as needed
 
     return () => {
       clearInterval(interval);
     };
-  }, [isMouseInside]);
+  }, []);
 
   // Update particles' positions
   useEffect(() => {
@@ -75,19 +53,9 @@ function Hero() {
     };
   }, [particles]);
 
-  useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
   return (
     <div
       className='hero-main container-fluid p-lg-3 p-2 overflow-hidden'
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
     >
       <div className="hero">
         <div className="row">

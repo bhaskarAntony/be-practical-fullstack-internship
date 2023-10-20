@@ -57,7 +57,7 @@ const TechSection = () => {
           {technologies.map((tech, index) => (
             <div key={index} className="col-12 col-md-6 col-lg-4">
               <div className="tech-card">
-                <h3 className="tech-title text-main">{tech.title}</h3>
+                <h3 className="tech-title text-yellow">{tech.title}</h3>
                 <p className="tech-description">{tech.description}</p>
               </div>
             </div>

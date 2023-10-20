@@ -2,7 +2,7 @@
   --black: black;
   --light-grey: #f4f4f4;
   --white: white;
-  --blue-violet: #f717ff;
+  --blue-violet: #ff0058;
 }
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Barcode+39+Extended+Text&family=Libre+Franklin&family=Noto+Sans:wght@300&family=Nunito:wght@500&family=Poppins:wght@400;500;800&family=Press+Start+2P&family=Rubik&family=Tilt+Prism&family=Wallpoet&family=Work+Sans:wght@300&display=swap');
 *{
@@ -10,6 +10,9 @@
 }
 .text-main{
   color: var(--blue-violet) !important;
+}
+.text-yellow{
+  color: #ffbc00;
 }
 .main-btn{
   background: linear-gradient(45deg, #4d019e, #de1383) !important;
@@ -21,7 +24,7 @@
   color: #fff;
 }
 .btn-2{
-  background: linear-gradient(45deg, #ff40e9, #ff0f7b) !important;
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
   border: none;
   padding: 10px;
   min-width: 150px;
@@ -59,7 +62,7 @@
 .devider{
   height: 5px;
   width: 200px;
-  background: linear-gradient(45deg, #4d019e, #de1383) !important;
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
   border-radius: 100px;
   position: relative;
   margin-bottom: 20px;
@@ -106,4 +109,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.custom-close-button .offcanvas-close {
+  color: white; /* Set the color to white */
 }

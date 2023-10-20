@@ -142,8 +142,8 @@ function Register() {
     <div className="d-lg-none d-sm-block d-md-block">
         <Registration/>
     </div>
-     <div className='container register bg-faq p-3 d-md-none d-sm-none d-none d-lg-block'>
-        <h1 className="card-heading w-100 text-center text-black">Register Now</h1>
+     <div className='container register p-3 py-3 d-md-none d-sm-none d-none d-lg-block'>
+        {/* <h1 className="card-heading w-100 text-center text-main">Register Now</h1> */}
     <form  action='post' autoComplete='false' onSubmit={submitHandler}>
     <div className="row">
        <div className="col-12 col-md-12 col-lg-3">
@@ -168,7 +168,7 @@ function Register() {
             </div>
             </div>
             <div className="col-12 col-md-12 col-lg-3">
-                <button type='submit' className="btn bg-black text-white mt-4 py-3 w-100">Register</button>
+                <button type='submit' className="btn-2  mt-4 py-3 w-100">Register</button>
             </div>
        </div>
     </form>

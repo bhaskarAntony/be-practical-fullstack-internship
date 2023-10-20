@@ -1,14 +1,22 @@
 .register{
-    /* background: #ffffff;
-    background: linear-gradient(315deg, #FFB677, #ffcea4); */
+    background: rgba(255, 255, 255, 0.02); /* Frosted glass background color */
+    padding: 20px;
     border-radius: 10px;
-    min-height: 200px;
+    color: #fff !important;
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border for the glass effect */
 }
 .register .form-control{
+    background: rgba(255, 255, 255, 0.063); /* Frosted glass background color */
     padding: 15px;
-    border: 1px solid #000000;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Border for the glass effect */
+}
+.register .form-control::placeholder{
+    color: #fff;
 }
 .form-label{
-    color: #000000;
+    color: #ffffff;
     font-weight: 900;
 }

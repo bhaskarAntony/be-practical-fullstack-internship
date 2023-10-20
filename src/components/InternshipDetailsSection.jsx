@@ -20,7 +20,7 @@ const InternshipDetailsSection = () => {
             <p className="details-description">
               Our 1-month full-stack web development internship program offers a unique opportunity to enhance your skills in front-end and back-end development. Dive into real-world projects, receive one-on-one mentorship, and build a portfolio that sets you up for success.
             </p>
-            <a href="#apply-now" className="btn btn-primary btn-lg details-button">Apply Now</a>
+            <a href="#apply-now" className="btn bg-black text-white btn-lg details-button">Apply Now</a>
           </Col>
         </Row>
       </Container>

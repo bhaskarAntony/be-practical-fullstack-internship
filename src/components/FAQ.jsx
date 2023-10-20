@@ -72,7 +72,7 @@ function FAQ() {
                     {
                       faqData.map((item,index) => {
                           return (
-                            <div className="accordion-item bg-faq mt-2 mb-2" key={index}>
+                            <div className="accordion-item p-0 bg-transparent mt-2 mb-2 rounded-5" key={index}>
                               <div className="accordion-header ">
                                 <div className="accordion-button collapsed  border bg-faq mb-1" data-bs-target={`#${item.title}`} data-bs-toggle="collapse">
                                     <h6 className="text-900 text-white"> { item.question } </h6>
