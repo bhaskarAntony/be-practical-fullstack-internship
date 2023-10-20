@@ -8,6 +8,7 @@ import ProgramOverviewSection from '../components/ProgramOverviewSection'
 import InternshipDetailsSection from '../components/InternshipDetailsSection'
 import Calendar from '../components/Calendar'
 import FAQ from '../components/FAQ'
+import TechSection from '../components/TechSection'
 
 function Home() {
   return (
@@ -20,11 +21,8 @@ function Home() {
       <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>
-      <Projects/>
-      <div className="text-center d-flex justify-content-center">
-      <div className="devider"></div>
-      </div>
-      <Days/>
+ 
+       <InternshipDetailsSection/>
       <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>
@@ -32,7 +30,15 @@ function Home() {
       <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>
-      <InternshipDetailsSection/>
+       <Projects/>
+      <div className="text-center d-flex justify-content-center">
+      <div className="devider"></div>
+      </div>
+      <TechSection/>
+      <div className="text-center d-flex justify-content-center">
+      <div className="devider"></div>
+      </div>
+      <Days/>
       <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>

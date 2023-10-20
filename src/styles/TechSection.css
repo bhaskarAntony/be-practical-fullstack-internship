@@ -1,0 +1,54 @@
+/* TechSection.css */
+
+/* Section Container */
+.tech-section {
+    padding: 80px 0;
+    background: linear-gradient(45deg, #2f3542, #485460); /* Adjust gradient colors as needed */
+    color: #ffffff;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Description */
+  .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  /* TechSection.css */
+
+/* Technology Cards */
+.tech-card {
+  background: rgba(255, 255, 255, 0.15); /* Frosted glass background color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Border for the glass effect */
+  transition: transform 0.3s ease;
+}
+
+/* Technology Title */
+.tech-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Technology Description */
+.tech-description {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Hover effect for cards */
+.tech-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Add a shadow on hover */
+}
