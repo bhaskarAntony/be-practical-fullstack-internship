@@ -1,5 +1,6 @@
 .program-overview {
-    /* background: linear-gradient(315deg, #007BFF, #0056b3); */
+    background: linear-gradient(315deg, #007BFF, #0056b3);
+    border-radius: 10px;
     padding: 80px 0;
     color: #fff;
   }

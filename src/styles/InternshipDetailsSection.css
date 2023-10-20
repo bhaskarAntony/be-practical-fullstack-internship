@@ -1,5 +1,6 @@
 .internship-details {
     background: linear-gradient(315deg, #FF5733, #D3240E);
+    border-radius: 10px;
     padding: 80px 0;
     color: #fff;
   }

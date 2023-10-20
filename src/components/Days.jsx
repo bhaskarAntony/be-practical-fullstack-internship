@@ -73,7 +73,7 @@ function Days() {
     //   }, []);
   return (
 
-    <section className="container-fluid main-company-container">
+    <section className="container-fluid main-company-container overflow-hidden">
       <div className="companies container-fluid">
         <div className="companies-brands-container container-fluid p-2">
             <h1 className="banner-heading text-main">What you will learn Over 1 Month <span className="text-main">Internship Program</span></h1>

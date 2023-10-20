@@ -1,11 +1,14 @@
 .register{
-    background: #ffffff;
+    /* background: #ffffff;
+    background: linear-gradient(315deg, #FFB677, #ffcea4); */
     border-radius: 10px;
+    min-height: 200px;
 }
 .register .form-control{
     padding: 15px;
-    border: 1px solid #c4c4c4;
+    border: 1px solid #000000;
 }
-/* .form-label{
-    color: #fff;
-} */
+.form-label{
+    color: #000000;
+    font-weight: 900;
+}

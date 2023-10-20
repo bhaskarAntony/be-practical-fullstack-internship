@@ -12,26 +12,29 @@
     z-index: 10;
     min-height: 100px;
 }
+.project-card h5{
+    width: fit-content;
+}
 
 .card1 {
-    background: linear-gradient(315deg, #edf331, #e70874);
+     background: linear-gradient(315deg,#FF8E6E, #f5af9b );
 }
 
 .card2{
-    background: linear-gradient(315deg, #ff5733, #00a1e4);
+    background: linear-gradient(315deg, #86c1f1, #00a1e4);
 }
 
 .card3{
-    background: linear-gradient(315deg, #7345fc, #cef060);
+     background: linear-gradient(315deg,#2EB872, #75ffba );
 }
 .card4{
-    background: linear-gradient(315deg, #06f6d2, #02311c);
+    background: linear-gradient(315deg,#F6A2D4, #ffcceb );
 }
 .card5{
-    background: linear-gradient(315deg, #ff20b1, #2bff40);
+     background: linear-gradient(315deg,#2C2E3E, #494c60 );
 }
 .card6{
-    background: linear-gradient(315deg, #ff1414, #f824ff);
+     background: linear-gradient(315deg,#898121, #aba245 );
 }
 .project-card:hover::before{
     filter: blur(10px);

@@ -4,7 +4,8 @@ import '../styles/InternshipDetailsSection.css';
 
 const InternshipDetailsSection = () => {
   return (
-    <section className="internship-details p-3">
+   <div className="p-2">
+     <section className="internship-details p-3 container">
       <Container>
         <Row className="align-items-center">
           <Col lg={6} className="text-center mb-4">
@@ -24,6 +25,7 @@ const InternshipDetailsSection = () => {
         </Row>
       </Container>
     </section>
+   </div>
   );
 };
 

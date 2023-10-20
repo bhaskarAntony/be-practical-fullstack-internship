@@ -7,6 +7,7 @@ import Days from '../components/Days'
 import ProgramOverviewSection from '../components/ProgramOverviewSection'
 import InternshipDetailsSection from '../components/InternshipDetailsSection'
 import Calendar from '../components/Calendar'
+import FAQ from '../components/FAQ'
 
 function Home() {
   return (
@@ -32,6 +33,10 @@ function Home() {
       <div className="devider"></div>
       </div>
       <InternshipDetailsSection/>
+      <div className="text-center d-flex justify-content-center">
+      <div className="devider"></div>
+      </div>
+      <FAQ/>
     </div>
   )
 }

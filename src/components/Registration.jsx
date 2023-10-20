@@ -3,7 +3,6 @@ import '../styles/register.css'
 import Email from '../template/email';
 import { toast } from 'react-toastify';
 import axios from 'axios';
-import Registration from './Registration';
 const URL = "https://email-api-r1kd.onrender.com"
 
 const LoadingModal = () => {
@@ -17,7 +16,7 @@ const LoadingModal = () => {
       </div>
     );
   };
-function Register() {
+function Registration() {
     const [reg, setReg] = useState({
         name: "",
         email: "",
@@ -134,48 +133,50 @@ function Register() {
        sendEmail(reg.name, reg.email, reg.mobile)     
     };
   return (
-   <div className='p-3'>
-      {
+    <section className='registration p-1 px-lg-3' id='register'>
+           {
         loading ? <LoadingModal/> : null
-        }
-    <h1 className="banner-heading mb-5">Register for <span className="text-main">Fullstack <br />Internship Program</span></h1>
-    <div className="d-lg-none d-sm-block d-md-block">
-        <Registration/>
-    </div>
-     <div className='container register bg-faq p-3 d-md-none d-sm-none d-none d-lg-block'>
-        <h1 className="card-heading w-100 text-center text-black">Register Now</h1>
-    <form  action='post' autoComplete='false' onSubmit={submitHandler}>
-    <div className="row">
-       <div className="col-12 col-md-12 col-lg-3">
-            <div className="form-group mb-2">
-                <label htmlFor="name" className="form-label">Name</label>
-                <input type="text" name='name' className="form-control" placeholder='Enter your Name' value={reg.name} onChange={readValue} />
-                { err && nameErr ? <p className="text-danger text-start"> { nameErr } </p> : null }
+}
+       <div className="registration-form-container text-center sticky top-0">
+                <div className="card registration">
+                    <div className="card-header text-start bg-faq">
+                    <h1 className="card-heading text-black text-900 ">Enroll Our <br />Fullstack internship Program</h1>
+            <div className="d-flex align-items-end">
+            <h1 className="heading-text text-white mx-2">&#8377;1999</h1>
+            <h1 className="heading-subtitle text-black"><del>&#8377; 2999</del></h1>
+           
             </div>
+                    </div>
+                    <div className="card-body">
+                        <form action='post' autoComplete='false' onSubmit={submitHandler}>
+                            <div className="form-group mt-2">
+                                <input type="text" className="form-control p-3" name='name' placeholder='Enter Name' value={reg.name} onChange={readValue} required />
+                                <div>
+                    { err && nameErr ? <p className="text-danger text-start"> { nameErr } </p> : null }
+                             </div>
+                            </div>
+                            <div className="form-group mt-2">
+                                <input type="email" className="form-control p-3" name='email' placeholder='Enter Email'  value={reg.email} onChange={readValue} required/>
+                                <div>
+                                    { err && emailErr ? <p className="text-danger text-start"> { emailErr } </p> : null }
+                              </div>
+                            </div>
+                            <div className="form-group mt-2">
+                                <input type="text" className="form-control p-3"  name='mobile' placeholder='Enter Mobile Number' value={reg.mobile} onChange={readValue} required/>
+                                <div>
+                    { err && mobileErr ? <p className="text-danger text-start"> { mobileErr } </p> : null }
+                                 </div>
+                            </div>
+                            <div className="form-group mt-5">
+                               <button type="submit" className='main-btn text-700 w-100 '>Register <i class="bi bi-hand-index-thumb"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div className="col-12 col-md-12 col-lg-3">
-            <div className="form-group mb-2">
-                <label htmlFor="name" className="form-label">Email Address</label>
-                <input type="email" name='email' className="form-control" placeholder='Enter Email Address' value={reg.email} onChange={readValue}  />
-                { err && emailErr ? <p className="text-danger text-start"> { emailErr } </p> : null }
-            </div>
-            </div>
-            <div className="col-12 col-md-12 col-lg-3">
-            <div className="form-group mb-2">
-                <label htmlFor="name" className="form-label">Phone Number</label>
-                <input type="text" name='mobile' className="form-control" placeholder='Enter Phone Number' value={reg.mobile} onChange={readValue}  />
-                { err && mobileErr ? <p className="text-danger text-start"> { mobileErr } </p> : null }
-            </div>
-            </div>
-            <div className="col-12 col-md-12 col-lg-3">
-                <button type='submit' className="btn bg-black text-white mt-4 py-3 w-100">Register</button>
-            </div>
-       </div>
-    </form>
-        
-    </div>
-   </div>
+           
+    </section>
   )
 }
 
-export default Register
+export default Registration

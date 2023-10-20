@@ -4,7 +4,8 @@ import '../styles/ProgramOverviewSection.css';
 
 const ProgramOverviewSection = () => {
   return (
-    <section className="program-overview p-3">
+   <div className="p-2">
+     <section className="program-overview p-3 container">
       <Container>
         <Row>
           <Col lg={6} className="text-center mb-4">
@@ -24,6 +25,7 @@ const ProgramOverviewSection = () => {
         </Row>
       </Container>
     </section>
+   </div>
   );
 };
 

@@ -1,25 +1,52 @@
-.hero{
-    min-height: 100vh;
-    background-color: #000;
-    /* background: url('../images/herobg.svg') no-repeat center;
-    background-size: cover; */
-    border-radius: 20px;
+.hero {
+  min-height: 100vh;
+  background-color: #000;
+  border-radius: 20px;
+  position: relative; /* Added */
 }
-.hero-main{
-    background-color: #000;
-}
-.right-hero{
 
+.hero-main {
+  background-color: #000;
+  position: relative; /* Added */
 }
-.right-hero img{
-    margin-top: 50px;
-    animation: anim 1s ease-in-out infinite alternate;
+
+.right-hero {
+  position: relative; /* Added */
+  overflow: hidden; /* Added */
 }
-@keyframes anim{
-    from{
-        transform: translateY(10px) translateX(10px);
-    }
-    to{
-        transform: translateY(-10px) translateX(-10px);
-    }
+
+.right-hero img {
+  margin-top: 50px;
+  animation: anim 1s ease-in-out infinite alternate;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  animation: moveParticle 3s linear infinite, fadeOut 3s ease-in-out forwards;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes anim {
+  from {
+    transform: translateY(10px) translateX(10px);
+  }
+  to {
+    transform: translateY(-10px) translateX(-10px);
+  }
+}
+
+@keyframes moveParticle {
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
