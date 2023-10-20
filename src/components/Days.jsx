@@ -76,7 +76,7 @@ function Days() {
     <section className="container-fluid main-company-container">
       <div className="companies container-fluid">
         <div className="companies-brands-container container-fluid p-2">
-            <h1 className="banner-heading text-main">Week-1</h1>
+            <h1 className="banner-heading text-main">What you will learn Over 1 Month <span className="text-main">Internship Program</span></h1>
           <div className="row">
           <Slider {...settings}>
                 {week1.map((item, index) => (
@@ -89,38 +89,6 @@ function Days() {
                   </div>
                 ))}
               </Slider>
-              
-          </div>
-          <h1 className="banner-heading main-text mt-5">Week-2</h1>
-          <div className="row">
-          <Slider {...settings}>
-                {week1.map((item, index) => (
-                  <div className="col-12 col-md-12 col-lg-6 p-2" key={index}>
-                    <div className="week2-card" data-aos="flip-up">
-                     <h4>{item.days}</h4>
-                     <h3 className='card-heading'>{item.title}</h3>
-                     <p className="card-p">{item.content}</p>
-                    </div>
-                  </div>
-                ))}
-              </Slider>
-              
-              
-          </div>
-          <h1 className="banner-heading main-text mt-5">Week-3</h1>
-          <div className="row">
-          <Slider {...settings}>
-                {week1.map((item, index) => (
-                  <div className="col-12 col-md-12 col-lg-6 p-2" key={index}>
-                    <div className="week3-card" data-aos="flip-up">
-                     <h4>{item.days}</h4>
-                     <h3 className='card-heading'>{item.title}</h3>
-                     <p className="card-p">{item.content}</p>
-                    </div>
-                  </div>
-                ))}
-              </Slider>
-              
               
           </div>
         </div>

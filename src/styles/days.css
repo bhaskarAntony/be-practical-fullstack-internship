@@ -1,15 +1,66 @@
-.week1-card{
-    background: #FCD77F;
-    min-height: 300px;
-    padding: 10px;
+/* Section Styles */
+.main-company-container {
+  background: linear-gradient(315deg, #333, #000); /* Gradient background */
+  padding: 80px 0;
+  color: #fff;
 }
-.week2-card{
-    background:#9B5D73;
-    min-height: 300px;
-    padding: 10px;
+
+.banner-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-.week3-card{
-    background: #FF8243;
-    min-height: 300px;
-    padding: 10px;
+
+/* Card Styles */
+.week1-card {
+  background: #111; /* Dark background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Add a transform effect */
+}
+
+.week1-card:hover {
+  transform: translateY(-5px); /* Move card up on hover */
+}
+
+.card-day {
+  background: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.card-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+/* Slider Arrows */
+.slick-prev,
+.slick-next {
+  background: #fff;
+  color: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 10px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #000;
+  color: #fff;
 }

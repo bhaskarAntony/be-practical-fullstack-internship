@@ -1,0 +1,42 @@
+.program-overview {
+    /* background: linear-gradient(315deg, #007BFF, #0056b3); */
+    padding: 80px 0;
+    color: #fff;
+  }
+  
+  .program-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .program-details {
+    text-align: left;
+  }
+  
+  .program-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .program-description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .program-button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .program-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  

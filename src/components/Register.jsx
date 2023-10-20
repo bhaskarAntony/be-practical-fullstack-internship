@@ -5,7 +5,7 @@ function Register() {
   return (
    <div className='p-3'>
     <h1 className="banner-heading mb-5">Register for <span className="text-main">Fullstack <br />Internship Program</span></h1>
-     <div className='container register'>
+     <div className='container register p-3'>
     <div className="row">
        <div className="col-12 col-md-12 col-lg-3">
             <div className="form-group mb-2">

@@ -1,0 +1,41 @@
+.internship-details {
+    background: linear-gradient(315deg, #FF5733, #D3240E);
+    padding: 80px 0;
+    color: #fff;
+  }
+  
+  .internship-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .details {
+    text-align: left;
+  }
+  
+  .details-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .details-description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .details-button {
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .details-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
