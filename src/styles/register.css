@@ -1,0 +1,11 @@
+.register{
+    background: #ffffff;
+    border-radius: 10px;
+}
+.register .form-control{
+    padding: 15px;
+    border: 1px solid #c4c4c4;
+}
+/* .form-label{
+    color: #fff;
+} */

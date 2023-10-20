@@ -1,0 +1,38 @@
+.projects{
+
+}
+.project-card{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    color: #fff;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.card1 {
+    background: linear-gradient(315deg, #edf331, #e70874);
+}
+
+.card2{
+    background: linear-gradient(315deg, #ff5733, #00a1e4);
+}
+
+.card3{
+    background: linear-gradient(315deg, #7345fc, #cef060);
+}
+.card4{
+    background: linear-gradient(315deg, #06f6d2, #02311c);
+}
+.card5{
+    background: linear-gradient(315deg, #ff20b1, #2bff40);
+}
+.card6{
+    background: linear-gradient(315deg, #ff1414, #f824ff);
+}
+.project-card:hover::before{
+    filter: blur(10px);
+    transform: skewY(0);
+}

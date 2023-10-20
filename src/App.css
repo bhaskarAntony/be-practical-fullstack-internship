@@ -1,0 +1,79 @@
+:root {
+  --black: black;
+  --light-grey: #f4f4f4;
+  --white: white;
+  --blue-violet: #f717ff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Barcode+39+Extended+Text&family=Libre+Franklin&family=Noto+Sans:wght@300&family=Nunito:wght@500&family=Poppins:wght@400;500;800&family=Press+Start+2P&family=Rubik&family=Tilt+Prism&family=Wallpoet&family=Work+Sans:wght@300&display=swap');
+*{
+  font-family: 'Nunito', sans-serif !important;
+}
+.text-main{
+  color: var(--blue-violet);
+}
+.main-btn{
+  background: linear-gradient(45deg, #4d019e, #de1383) !important;
+  border: none;
+  padding: 10px;
+  min-width: 150px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: #fff;
+}
+.btn-2{
+  background: linear-gradient(45deg, #ff40e9, #ff0f7b) !important;
+  border: none;
+  padding: 10px;
+  min-width: 150px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  color: #fff;
+}
+.gradient{
+  background: linear-gradient(45deg, #4d019e, #de1383) !important;
+}
+.heading{
+  font-size: 3.5rem;
+}
+.text-900{
+  font-weight: 900;
+}
+.text-800{
+  font-weight: 800;
+}
+.card-heading{
+  font-size: 2rem;
+}
+.card-p{
+  font-size: 1.2rem;
+}
+.subtitle{
+  font-size: 1.2rem;
+}
+.banner-heading{
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.devider{
+  height: 5px;
+  width: 200px;
+  background: linear-gradient(45deg, #4d019e, #de1383) !important;
+  border-radius: 100px;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+@media(max-width:600px){
+  .home-btn{
+    min-width: 100%;
+  }
+  .heading{
+    font-size: 2.5rem;
+  }
+  .banner-heading{
+    font-size: 2rem;
+  }
+}

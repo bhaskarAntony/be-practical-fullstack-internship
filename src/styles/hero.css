@@ -1,0 +1,25 @@
+.hero{
+    min-height: 100vh;
+    background-color: #000;
+    /* background: url('../images/herobg.svg') no-repeat center;
+    background-size: cover; */
+    border-radius: 20px;
+}
+.hero-main{
+    background-color: #000;
+}
+.right-hero{
+
+}
+.right-hero img{
+    margin-top: 50px;
+    animation: anim 1s ease-in-out infinite alternate;
+}
+@keyframes anim{
+    from{
+        transform: translateY(10px) translateX(10px);
+    }
+    to{
+        transform: translateY(-10px) translateX(-10px);
+    }
+}
