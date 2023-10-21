@@ -30,7 +30,7 @@ const cards = [
 ]
 function Projects() {
   return (
-    <div className='container projects mt-4'>
+    <section className='container projects mt-4' id='projects'>
         <h1 className="banner-heading"><i class="bi bi-stars"></i> Projects In <span className="text-main">Internship</span></h1>
         <div className="row mt-3 p-3">
             {
@@ -45,7 +45,12 @@ function Projects() {
             }
           
         </div>
-    </div>
+        <div className="text-center">
+        <a href="#register">
+       <button className="btn-2">Register Now</button>
+       </a>
+        </div>
+    </section>
   )
 }
 

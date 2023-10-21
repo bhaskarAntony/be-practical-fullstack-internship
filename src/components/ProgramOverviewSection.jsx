@@ -5,7 +5,7 @@ import '../styles/ProgramOverviewSection.css';
 const ProgramOverviewSection = () => {
   return (
    <div className="p-2">
-     <section className="program-overview p-3 container">
+     <section className="program-overview p-3 container" id='overview'>
       <Container>
         <Row>
           <Col lg={6} className="text-center mb-4">

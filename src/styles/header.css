@@ -8,7 +8,34 @@ header{
  .nav-link{
     color: #fff !important;
     font-size: 1.5rem;
+    position: relative;
+    z-index: 10;
 }
-.offcanvas .nav-link{
-    margin-bottom: 10px;
+.nav-link::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    z-index: -1;
+    transform: scale(0);
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: linear-gradient(315deg, #ffbc00, #ff0058);
+    z-index: -1;
+    top: 0;
+    left: 80%;
+    transform: scale(0);
+}
+.nav-link:hover::before{
+    transform: scale(1.4);
+}
+.nav-link:hover::after{
+    transform: scale(1);
 }

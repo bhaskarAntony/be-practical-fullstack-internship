@@ -134,7 +134,7 @@ function Register() {
        sendEmail(reg.name, reg.email, reg.mobile)     
     };
   return (
-   <div className='p-3'>
+   <section className='p-3' id='register'>
       {
         loading ? <LoadingModal/> : null
         }
@@ -174,7 +174,7 @@ function Register() {
     </form>
         
     </div>
-   </div>
+   </section>
   )
 }
 

@@ -54,8 +54,8 @@ function Hero() {
   }, [particles]);
 
   return (
-    <div
-      className='hero-main container-fluid p-lg-3 p-2 overflow-hidden'
+    <section
+      className='hero-main container-fluid p-lg-3 p-2 overflow-hidden' id='home'
     >
       <div className="hero">
         <div className="row">
@@ -96,7 +96,7 @@ function Hero() {
           }}
         ></div>
       ))}
-    </div>
+    </section>
   );
 }
 

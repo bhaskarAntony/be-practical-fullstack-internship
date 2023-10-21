@@ -1,0 +1,55 @@
+/* Responsibilities.css */
+.responsibilities {
+    display: flex;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    padding: 50px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .animation {
+    /* Your unique animation styles go here */
+  }
+  
+  .content {
+    z-index: 1;
+    max-width: 800px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* Hover animation for the content */
+  .content:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+  
+  /* Hover animation for the gradient background */
+  .background:hover {
+    background: linear-gradient(135deg, #182848, #4b6cb7);
+    transition: background 0.3s;
+  }
+  

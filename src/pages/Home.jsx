@@ -9,6 +9,8 @@ import InternshipDetailsSection from '../components/InternshipDetailsSection'
 import Calendar from '../components/Calendar'
 import FAQ from '../components/FAQ'
 import TechSection from '../components/TechSection'
+import Responsibilities from '../components/Responsibilities'
+import ContactInformation from '../components/ContactInformation'
 
 function Home() {
   return (
@@ -31,6 +33,10 @@ function Home() {
       <div className="devider"></div>
       </div>
        <Projects/>
+       <div className="text-center d-flex justify-content-center">
+      <div className="devider"></div>
+      </div>
+      <Responsibilities/>
       <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>
@@ -43,6 +49,10 @@ function Home() {
       <div className="devider"></div>
       </div>
       <FAQ/>
+      <div className="text-center d-flex justify-content-center">
+      <div className="devider"></div>
+      </div>
+      <ContactInformation/>
     </div>
   )
 }

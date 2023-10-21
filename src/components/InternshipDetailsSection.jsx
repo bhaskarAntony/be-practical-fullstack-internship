@@ -5,7 +5,7 @@ import '../styles/InternshipDetailsSection.css';
 const InternshipDetailsSection = () => {
   return (
    <div className="p-2">
-     <section className="internship-details p-3 container">
+     <section className="internship-details p-3 container" id='details'>
       <Container>
         <Row className="align-items-center">
           <Col lg={6} className="text-center mb-4">

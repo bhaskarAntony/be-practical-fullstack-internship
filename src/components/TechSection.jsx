@@ -47,7 +47,7 @@ const technologies = [
 
 const TechSection = () => {
   return (
-    <section className="tech-section">
+    <section className="tech-section" id="tools">
       <div className="container">
         <h2 className="section-title">Technologies and Tools</h2>
         <p className="section-description">

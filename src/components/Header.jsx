@@ -22,19 +22,28 @@ function Header() {
     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-group  d-flex justify-content-center w-100">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Home</a>
+          <a class="nav-link" aria-current="page" href="#home">Home</a>
         </li>
         <li class="nav-item dropdown">
-         <a href="" className='nav-link'>Certificate</a>
+         <a href="#certificate" className='nav-link'>Certificate</a>
         </li>
         <li class="nav-item dropdown">
-         <a href="" className='nav-link'>Why this?</a>
+         <a href="#why" className='nav-link'>Why this?</a>
         </li>
         <li class="nav-item dropdown">
-         <a href="" className='nav-link'>in 1 Month</a>
+         <a href="#days" className='nav-link'>in 1 Month</a>
+        </li>
+        <li class="nav-item dropdown">
+         <a href="#overview" className='nav-link'>Overview</a>
+        </li>
+        <li class="nav-item dropdown">
+         <a href="#details" className='nav-link'>Internship Details</a>
+        </li>
+        <li class="nav-item dropdown">
+         <a href="#faq" className='nav-link'>Faq</a>
         </li>
       </ul>
-      <a href="/register" className='text-decoration-none'>
+      <a href="#register" className='text-decoration-none'>
      <button className="w-100 btn-2" type="button">Register Now </button>
      </a>
     </div>
