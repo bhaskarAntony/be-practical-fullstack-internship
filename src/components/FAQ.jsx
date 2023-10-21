@@ -81,7 +81,7 @@ function FAQ() {
                     }
                 </div>
            </div>
-           <div className="col-12 col-md-12 col-lg-4" data-aos="fade-down">
+           <div className="col-12 col-md-12 col-lg-4">
             <Registration/>
            </div>
           </div>

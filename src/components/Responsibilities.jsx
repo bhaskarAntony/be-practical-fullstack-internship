@@ -4,7 +4,7 @@ import '../styles/Responsibilities.css';
 function Responsibilities() {
   return (
     <div className="p-2">
-      <div className="responsibilities rounded-5 container">
+      <div className="responsibilities rounded-5 container p-lg-5 p-3">
         <div className="row">
           <div className="col-12 col-md-12 col-lg-4 mt-2 d-flex align-items-center justify-content-center" >
             <img src="https://img.freepik.com/free-psd/3d-rendering-graphic-design_23-2149667500.jpg?w=360" alt="" className="w-100 rounded-3" />

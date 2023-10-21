@@ -62,7 +62,7 @@ function Hero() {
           <div className="col-12 col-md-12 col-lg-6">
             <div className="left-hero p-lg-4 p-3 mt-lg-5 m-3">
               <h1 className="heading text-900 text-black text-white">
-                be Practicals 1 Month Fullstack <span className="text-main">Internship Program.</span>
+                Be Practical's One-Month <span className="text-main"> full stack development internship </span>
               </h1>
               <p className="subtitle text-white">
               Our 1-month full-stack web development internship program offers a unique opportunity to enhance your skills in front-end and back-end development.

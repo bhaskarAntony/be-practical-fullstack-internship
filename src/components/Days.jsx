@@ -3,7 +3,6 @@ import '../styles/days.css'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Aos from 'aos';
 
 
 const internshipData = [
@@ -123,20 +122,17 @@ function Days() {
             prevArrow: <button className="slick-prev">Previous</button>, // Add previous arrow
             nextArrow: <button className="slick-next">Next</button>, // Add next arrow
           };
-    useEffect(() => {
-        Aos.init(); // Initialize AOS
-      }, []);
   return (
 
     <section className="container-fluid main-company-container overflow-hidden" id='days'>
       <div className="companies container-fluid">
         <div className="companies-brands-container container-fluid p-2">
-            <h1 className="banner-heading text-main">What you will Do Over 1 Month <span className="text-main">Internship Program</span></h1>
+            <h1 className="banner-heading">What you will Do Over <br /> 1 Month <span className='text-main'></span><span className="text-main">full stack development internship</span></h1>
           <div className="row">
           <Slider {...settings}>
                 {internshipData.map((item, index) => (
                   <div className="col-12 col-md-12 col-lg-6 p-2" key={index}>
-                    <div className="week1-card" data-aos="flip-up">
+                    <div className="week1-card">
                      <h4>{item.days}</h4>
                      <h3 className='card-heading text-900'>{item.title}</h3>
                     <ul>

@@ -20,7 +20,7 @@ const ProgramOverviewSection = () => {
             <p className="program-description">
               Our 1-month full-stack web development internship program is designed to provide hands-on experience in front-end and back-end development. You'll work on real projects, learn from experienced mentors, and build a solid foundation in web development.
             </p>
-            <a href="#apply-now" className="btn btn-outline-light btn-lg program-button">Apply Now</a>
+            <a href="#register" className="btn btn-outline-light btn-lg program-button">Apply Now</a>
           </Col>
         </Row>
       </Container>
