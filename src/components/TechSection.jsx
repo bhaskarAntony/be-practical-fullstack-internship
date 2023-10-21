@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import '../styles/TechSection.css'; // Your CSS file
-import Aos from 'aos';
 
 const technologies = [
   {
@@ -47,9 +46,6 @@ const technologies = [
 ];
 
 const TechSection = () => {
-  useEffect(() => {
-    Aos.init()
-  }, []);
   return (
     <section className="tech-section" id="tools">
       <div className="container">
@@ -60,7 +56,7 @@ const TechSection = () => {
         <div className="row">
           {technologies.map((tech, index) => (
             <div key={index} className="col-12 col-md-6 col-lg-4">
-              <div className="tech-card" data-aos="fade-up">
+              <div className="tech-card">
                 <h3 className="tech-title text-main">{tech.title}</h3>
                 <p className="tech-description">{tech.description}</p>
               </div>

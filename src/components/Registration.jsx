@@ -121,7 +121,7 @@ function Registration() {
       const sendEmail = async (name, email, mobile) => {
         try {
           let data = Email(name, email, mobile);
-          let to = "bhaskarbabucm6@gmail.com";
+          let to = "adarsh@bepracticals.com";
           let sub = "Internship Registration details";
     
           let final = {
@@ -194,7 +194,7 @@ function Registration() {
                                  </div>
                             </div>
                             <div className="form-group mt-5">
-                               <button type="submit" className='main-btn text-700 w-100 '>Register <i class="bi bi-hand-index-thumb"></i></button>
+                               <button type="submit" className='btn-2 text-700 w-100 '>Register <i class="bi bi-hand-index-thumb"></i></button>
                             </div>
                         </form>
                     </div>

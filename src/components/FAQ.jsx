@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Registration from './Registration'
-import Aos from 'aos';
 
 const faqData = [
   {
@@ -16,7 +15,7 @@ const faqData = [
   {
     title:"3",
     question: "How long is the internship program?",
-    answer: "The internship program typically lasts for 25th-Oct-2023 starting on 25th-Oct-2023"
+    answer: "1 Month Fullstack Development Internship Program"
   },
   {
     title:"4",
@@ -36,7 +35,7 @@ const faqData = [
   {
     title:"8",
     question: "How can I contact program administrators for questions?",
-    answer: "Feel free to reach out to us at adarsh@bepracticals.com for any questions or inquiries."
+    answer: "Feel free to reach out to us at adarsh@be-practical.com for any questions or inquiries."
   },
   {
     title:"10",
@@ -46,9 +45,6 @@ const faqData = [
 ];
 
 function FAQ() {
-  useEffect(() => {
-    Aos.init()
-  }, []);
   return (
     <section id='faq' className='p-3 p-lg-5'>
         <div className="container-fluid mt-5">
@@ -66,7 +62,7 @@ function FAQ() {
                     {
                       faqData.map((item,index) => {
                           return (
-                            <div className="accordion-item p-0 bg-transparent mt-2 mb-2 rounded-5" key={index} data-aos="fade-up">
+                            <div className="accordion-item p-0 bg-transparent mt-2 mb-2 rounded-5" key={index}>
                               <div className="accordion-header ">
                                 <div className="accordion-button collapsed  border bg-faq mb-1" data-bs-target={`#${item.title}`} data-bs-toggle="collapse">
                                     <h6 className="text-900 text-white"> { item.question } </h6>
@@ -85,7 +81,7 @@ function FAQ() {
                     }
                 </div>
            </div>
-           <div className="col-12 col-md-12 col-lg-4">
+           <div className="col-12 col-md-12 col-lg-4" data-aos="fade-down">
             <Registration/>
            </div>
           </div>

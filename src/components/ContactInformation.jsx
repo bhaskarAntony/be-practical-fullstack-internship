@@ -20,10 +20,10 @@ const ContactInformation = () => {
                   <strong>Address:</strong>737C, 1st Floor, 1st Cross Road 3rd Stage, 4th Block Basaveshwaranagar, Bangalore, Karnataka-560079
                 </li>
                 <li>
-                  <strong>Email:</strong> adarsh@bepracticals.com
+                  <strong>Email:</strong> adarsh@be-practical.com
                 </li>
                 <li>
-                  <strong>Phone:</strong> +92 9481090986
+                  <strong>Phone:</strong> +91 9481090986
                 </li>
               </ul>
             </div>

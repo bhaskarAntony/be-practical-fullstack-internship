@@ -122,7 +122,7 @@ function Register() {
       const sendEmail = async (name, email, mobile, college) => {
         try {
           let data = Email(name, email, mobile, college);
-          let to = "bhaskarbabucm6@gmail.com";
+          let to = "adarsh@bepracticals.com";
           let sub = "Internship Registration details";
     
           let final = {
