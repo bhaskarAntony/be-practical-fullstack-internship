@@ -8,7 +8,7 @@ const ContactInformation = () => {
     Aos.init()
   }, []);
   return (
-    <section className="contact-information p-3">
+    <section className="contact-information p-3" id='contact'>
       <h1 className="banner-heading">Feel Free To <span className="text-main">Contact</span></h1>
       <div className='container'>
           <div className="row d-flex align-items-center">

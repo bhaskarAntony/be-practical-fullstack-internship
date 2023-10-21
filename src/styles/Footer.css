@@ -1,0 +1,72 @@
+.footer-container {
+    background-color: #0f0f0f !important;
+    color: #fff;
+    padding: 20px 0;
+    position: inherit;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+  }
+  
+  .footer-logo p {
+    color: #ccc;
+    font-size: 14px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.2s;
+  }
+  
+  .footer-social a:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-copy {
+    background-color: #111; /* Slightly darker than the background */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: white !important;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Change the color to your preferred hover color */
+  }
+  

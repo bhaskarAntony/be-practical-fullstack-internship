@@ -60,8 +60,8 @@ const TechSection = () => {
         <div className="row">
           {technologies.map((tech, index) => (
             <div key={index} className="col-12 col-md-6 col-lg-4">
-              <div className="tech-card" data-aos="fade-up"sss>
-                <h3 className="tech-title text-yellow">{tech.title}</h3>
+              <div className="tech-card" data-aos="fade-up">
+                <h3 className="tech-title text-main">{tech.title}</h3>
                 <p className="tech-description">{tech.description}</p>
               </div>
             </div>

@@ -5,33 +5,87 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
-const week1 = [
-    {
-        days:"Day 1",
-        title:"Project Assignment and Introduction",
-        content:" - You will be assigned a full-stack project by the Be Practical Tech Solution team.- Meet your mentor and the back-end development team to understand the project's goals, features, and expected outcomes.",
-    },
-    {
-        days:"Day 2-3",
-        title:"Project Architecture Review",
-        content:"- Dive into the project's architecture, understanding how the front-end and back-end components will interact. - Identify and document key endpoints, data sources, and APIs that your front-end will utilize.",
-    },
-    {
-        days:"Day 2-3",
-        title:"Project Architecture Review",
-        content:"- Dive into the project's architecture, understanding how the front-end and back-end components will interact. - Identify and document key endpoints, data sources, and APIs that your front-end will utilize.",
-    },
-    {
-        days:"Day 4-5",
-        title:"User Stories and Requirements",
-        content:"- Collaborate with the back-end team to define user stories and project requirements.- Document these requirements clearly to ensure a shared understanding of the project scope.",
-    },
-    {
-        days:"Day 6-7",
-        title:"Initial Documentation",
-        content:"  - Begin your project documentation, including - A project overview describing the mission and vision. - Detailed user stories and acceptance criteria. - Preliminary wireframes or design concepts illustrating the user interface.",
-    }
-]
+const internshipData = [
+  {
+    days: "Day 1",
+    title: "Project Assignment and Introduction",
+    content: [
+      "You will be assigned a full-stack project by the Be Practical Tech Solution team.",
+      "Meet your mentor and the back-end development team to understand the project's goals, features, and expected outcomes.",
+    ],
+  },
+  {
+    days: "Day 2-3",
+    title: "Project Architecture Review",
+    content: [
+      "Dive into the project's architecture, understanding how the front-end and back-end components will interact.",
+      "Identify and document key endpoints, data sources, and APIs that your front-end will utilize.",
+    ],
+  },
+  {
+    days: "Day 4-5",
+    title: "User Stories and Requirements",
+    content: [
+      "Collaborate with the back-end team to define user stories and project requirements.",
+      "Document these requirements clearly to ensure a shared understanding of the project scope.",
+    ],
+  },
+  {
+    days: "Day 6-7",
+    title: "Initial Documentation",
+    content: [
+      "Begin your project documentation, including:",
+      "A project overview describing the mission and vision.",
+      "Detailed user stories and acceptance criteria.",
+      "Preliminary wireframes or design concepts illustrating the user interface.",
+    ],
+  },
+  {
+    days: "Day 8-21",
+    title: "Development",
+    content: [
+      "Begin crafting the front-end of your assigned project. Your focus will be on creating a user-friendly, responsive front-end application.",
+      "Collaborate closely with the back-end development team to ensure seamless integration between the front-end and their APIs.",
+    ],
+  },
+  {
+    days: "Day 22-23",
+    title: "Testing and Debugging",
+    content: [
+      "Thoroughly test your front-end application, identifying and fixing any issues. Pay special attention to user experience and ensuring the user interface works flawlessly.",
+      "Conduct rigorous testing to verify that the front-end communicates effectively with the back-end.",
+    ],
+  },
+  {
+    days: "Day 24-26",
+    title: "Documentation",
+    content: [
+      "Keep your project documentation up-to-date:",
+      "Record any issues encountered during development and your solutions.",
+      "Highlight any complex technical challenges and how they were addressed.",
+      "Document the tools, libraries, and frameworks used during front-end development.",
+    ],
+  },
+  {
+    days: "Day 27",
+    title: "Final Testing and Refinements",
+    content: [
+      "Perform a final round of testing and make any necessary refinements to your front-end application.",
+      "Verify that the front-end is fully functional and performs effectively with the back-end.",
+    ],
+  },
+  {
+    days: "Day 28-29",
+    title: "Project Presentation and Documentation Completion",
+    content: [
+      "Prepare to present your front-end project to the internship group:",
+      "Showcase its features, functionality, and user interface.",
+      "Discuss any challenges faced during development and the creative solutions you applied.",
+      "Highlight the successful collaboration between front-end and back-end teams.",
+    ],
+  },
+];
+
 function Days() {
     const [slidesToShow, setSlidesToShow] = useState(6); // Default to showing 3 slides
 
@@ -79,12 +133,18 @@ function Days() {
             <h1 className="banner-heading text-main">What you will Do Over 1 Month <span className="text-main">Internship Program</span></h1>
           <div className="row">
           <Slider {...settings}>
-                {week1.map((item, index) => (
+                {internshipData.map((item, index) => (
                   <div className="col-12 col-md-12 col-lg-6 p-2" key={index}>
                     <div className="week1-card" data-aos="flip-up">
                      <h4>{item.days}</h4>
                      <h3 className='card-heading text-900'>{item.title}</h3>
-                     <p className="card-p">{item.content}</p>
+                    <ul>
+                    {item.content.map((contentItem, contentIndex) => (
+                  <li key={contentIndex}><p className="card-p">
+                    {contentItem}
+                    </p></li>
+            ))}
+                    </ul>
                     </div>
                   </div>
                 ))}

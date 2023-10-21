@@ -25,10 +25,7 @@ function Header() {
           <a class="nav-link" aria-current="page" href="#home">Home</a>
         </li>
         <li class="nav-item dropdown">
-         <a href="#certificate" className='nav-link'>Certificate</a>
-        </li>
-        <li class="nav-item dropdown">
-         <a href="#why" className='nav-link'>Why this?</a>
+         <a href="#tools" className='nav-link'>Why this?</a>
         </li>
         <li class="nav-item dropdown">
          <a href="#days" className='nav-link'>in 1 Month</a>
@@ -41,6 +38,9 @@ function Header() {
         </li>
         <li class="nav-item dropdown">
          <a href="#faq" className='nav-link'>Faq</a>
+        </li>
+        <li class="nav-item dropdown">
+         <a href="#contact" className='nav-link'>Contact</a>
         </li>
       </ul>
       <a href="#register" className='text-decoration-none'>

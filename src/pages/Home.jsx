@@ -36,11 +36,11 @@ function Home() {
        <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>
-      <Responsibilities/>
+      <TechSection/>
       <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>
-      <TechSection/>
+      <Responsibilities/>
       <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>
