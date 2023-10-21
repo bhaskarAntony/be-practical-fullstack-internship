@@ -21,13 +21,14 @@ function Registration() {
         name: "",
         email: "",
         mobile: "",
-        coupon: "",
+        college: "",
       });
     
       const [err, setError] = useState(false);
       const [nameErr, setNameErr] = useState("");
       const [emailErr, setEmailErr] = useState("");
       const [mobileErr, setMobileErr] = useState("");
+      const [collegeErr, setCollegeErr] = useState("");
       const [loading, setLoading] = useState(false);
     
       const readValue = (e) => {
@@ -40,6 +41,9 @@ function Registration() {
         }
         if (name === "mobile") {
           validateMobile(value);
+        }
+        if (name === "college") {
+          validateCollege(value);
         }
        
         setReg({ ...reg, [name]: value });
@@ -59,6 +63,22 @@ function Registration() {
           } else {
             setError(false);
             setNameErr(false);
+          }
+        }
+      };
+
+      const validateCollege = (college) => {
+        if (college === "") {
+          setError(true);
+          setCollegeErr("College address field cannot be empty");
+        } else {
+          let regex = /^[a-zA-Z\s]+$/;
+          if (regex.test(college) === false) {
+            setError(true);
+            setNameErr("Please enter a valid address");
+          } else {
+            setError(false);
+            setCollegeErr(false);
           }
         }
       };
@@ -130,7 +150,7 @@ function Registration() {
       };
       const submitHandler = async (e) => {
         e.preventDefault();
-       sendEmail(reg.name, reg.email, reg.mobile)     
+       sendEmail(reg.name, reg.email, reg.mobile, reg.college)     
     };
   return (
     <section className='registration p-1 px-lg-3' id='register'>
@@ -165,6 +185,12 @@ function Registration() {
                                 <input type="text" className="form-control p-3"  name='mobile' placeholder='Enter Mobile Number' value={reg.mobile} onChange={readValue} required/>
                                 <div>
                     { err && mobileErr ? <p className="text-danger text-start"> { mobileErr } </p> : null }
+                                 </div>
+                            </div>
+                            <div className="form-group mt-2">
+                                <input type="text" className="form-control p-3"  name='college' placeholder='Enter Collge Name' value={reg.college} onChange={readValue} required/>
+                                <div>
+                    { err && collegeErr ? <p className="text-danger text-start"> { collegeErr } </p> : null }
                                  </div>
                             </div>
                             <div className="form-group mt-5">

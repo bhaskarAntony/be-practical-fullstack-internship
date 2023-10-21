@@ -10,10 +10,37 @@
     color: #fff;
     margin-bottom: 20px;
     z-index: 10;
+    overflow: hidden;
     min-height: 100px;
+}
+.project-card::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #000;
+    width: 100px;
+    right: -50px;
+    top: -60px;
+    transform: rotate(-45deg);
+}
+.project-card::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #000;
+    width: 100px;
+    left: -50px;
+    bottom: -60px;
+    transform: rotate(-45deg);
 }
 .project-card h5{
     width: fit-content;
+}
+.p-tag{
+    position: absolute;
+    top: -13px;
+    transform: translateY(50%);
+    left: 5px;
 }
 
 .card1 {
@@ -31,12 +58,9 @@
     background: linear-gradient(315deg,#F6A2D4, #ffcceb );
 }
 .card5{
-     background: linear-gradient(315deg,#2C2E3E, #494c60 );
+     background: linear-gradient(315deg,#a0a4c1, #686f9a );
 }
 .card6{
      background: linear-gradient(315deg,#898121, #aba245 );
 }
-.project-card:hover::before{
-    filter: blur(10px);
-    transform: skewY(0);
-}
+

@@ -37,7 +37,7 @@ function Projects() {
                 cards.map((item)=>(
                     <div className="col-12 col-md-12 col-lg-6">
                     <div className={`project-card p-lg-5  p-5 ${item.card}`}>
-                        <h5 className="text-800 text-black bg-white p-1 px-3 rounded-5"><i class="bi bi-stars"></i> Project</h5>
+                        <h5 className="text-800 text-black bg-white p-1 px-3 rounded-5 p-tag"><i class="bi bi-stars"></i> Project</h5>
                         <h1 className="card-heading text-900 text-black">{item.title}</h1>
                     </div>
                 </div>

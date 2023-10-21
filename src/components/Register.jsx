@@ -22,13 +22,14 @@ function Register() {
         name: "",
         email: "",
         mobile: "",
-        coupon: "",
+        college: "",
       });
     
       const [err, setError] = useState(false);
       const [nameErr, setNameErr] = useState("");
       const [emailErr, setEmailErr] = useState("");
       const [mobileErr, setMobileErr] = useState("");
+      const [collegeErr, setCollegeErr] = useState("");
       const [loading, setLoading] = useState(false);
     
       const readValue = (e) => {
@@ -41,6 +42,9 @@ function Register() {
         }
         if (name === "mobile") {
           validateMobile(value);
+        }
+        if (name === "college") {
+          validateCollege(value);
         }
        
         setReg({ ...reg, [name]: value });
@@ -60,6 +64,22 @@ function Register() {
           } else {
             setError(false);
             setNameErr(false);
+          }
+        }
+      };
+      
+      const validateCollege = (college) => {
+        if (college === "") {
+          setError(true);
+          setCollegeErr("College address field cannot be empty");
+        } else {
+          let regex = /^[a-zA-Z\s]+$/;
+          if (regex.test(college) === false) {
+            setError(true);
+            setNameErr("Please enter a valid address");
+          } else {
+            setError(false);
+            setCollegeErr(false);
           }
         }
       };
@@ -99,9 +119,9 @@ function Register() {
         }
       };
     
-      const sendEmail = async (name, email, mobile) => {
+      const sendEmail = async (name, email, mobile, college) => {
         try {
-          let data = Email(name, email, mobile);
+          let data = Email(name, email, mobile, college);
           let to = "bhaskarbabucm6@gmail.com";
           let sub = "Internship Registration details";
     
@@ -131,7 +151,7 @@ function Register() {
       };
       const submitHandler = async (e) => {
         e.preventDefault();
-       sendEmail(reg.name, reg.email, reg.mobile)     
+       sendEmail(reg.name, reg.email, reg.mobile, reg.college)     
     };
   return (
    <section className='p-3' id='register'>
@@ -167,7 +187,15 @@ function Register() {
                 { err && mobileErr ? <p className="text-danger text-start"> { mobileErr } </p> : null }
             </div>
             </div>
-            <div className="col-12 col-md-12 col-lg-3">
+            <div className="col-12 col-md-12 col-lg-3 mt-4">
+            <div className="form-group mt-2">
+                                <input type="text" className="form-control p-3"  name='college' placeholder='Enter College Name' value={reg.college} onChange={readValue} required/>
+                                <div>
+                    { err && collegeErr ? <p className="text-danger text-start"> { collegeErr } </p> : null }
+                                 </div>
+                            </div>
+            </div>
+            <div className="text-center w-100">
                 <button type='submit' className="btn-2  mt-4 py-3 w-100">Register</button>
             </div>
        </div>

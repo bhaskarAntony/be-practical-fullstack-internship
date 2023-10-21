@@ -1,4 +1,4 @@
-const Email = (name, email, mobile) => `
+const Email = (name, email, mobile, college) => `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,6 +77,10 @@ const Email = (name, email, mobile) => `
                 <th>Mobile</th>
                 <td>${mobile}</td>
             </tr>
+            <tr>
+            <th>College</th>
+            <td>${college}</td>
+              </tr>
         </table>
     </div>
 </body>

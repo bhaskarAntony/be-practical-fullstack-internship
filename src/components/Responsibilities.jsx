@@ -3,7 +3,8 @@ import '../styles/Responsibilities.css';
 
 function Responsibilities() {
   return (
-    <div className="responsibilities">
+    <div className="p-2">
+      <div className="responsibilities rounded-5">
       <div className="background">
         <div className="animation">
           {/* Add your unique 3D animation here */}
@@ -18,6 +19,7 @@ function Responsibilities() {
           <li>Thoroughly document project requirements and technical challenges.</li>
         </ul>
       </div>
+    </div>
     </div>
   );
 }
