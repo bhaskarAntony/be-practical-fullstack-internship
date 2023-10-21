@@ -159,11 +159,8 @@ function Register() {
         loading ? <LoadingModal/> : null
         }
     <h1 className="banner-heading mb-5">Register for <span className="text-main">Fullstack <br />Internship Program</span></h1>
-    <div className="d-lg-none d-sm-block d-md-block">
-        <Registration/>
-    </div>
-     <div className='container register p-3 py-3 d-md-none d-sm-none d-none d-lg-block'>
-        {/* <h1 className="card-heading w-100 text-center text-main">Register Now</h1> */}
+     <div className='container register p-3 py-3 '>
+        <h1 className="card-heading w-100 text-center text-main">Register Now</h1>
     <form  action='post' autoComplete='false' onSubmit={submitHandler}>
     <div className="row">
        <div className="col-12 col-md-12 col-lg-3">
@@ -187,8 +184,9 @@ function Register() {
                 { err && mobileErr ? <p className="text-danger text-start"> { mobileErr } </p> : null }
             </div>
             </div>
-            <div className="col-12 col-md-12 col-lg-3 mt-4">
-            <div className="form-group mt-2">
+            <div className="col-12 col-md-12 col-lg-3">
+            <div className="form-group mb-2">
+            <label htmlFor="name" className="form-label">College Name</label>
                                 <input type="text" className="form-control p-3"  name='college' placeholder='Enter College Name' value={reg.college} onChange={readValue} required/>
                                 <div>
                     { err && collegeErr ? <p className="text-danger text-start"> { collegeErr } </p> : null }
@@ -196,7 +194,7 @@ function Register() {
                             </div>
             </div>
             <div className="text-center w-100">
-                <button type='submit' className="btn-2  mt-4 py-3 w-100">Register</button>
+                <button type='submit' className="btn-2  mt-4 py-3 w-100">Register <i class="bi bi-chevron-double-right"></i></button>
             </div>
        </div>
     </form>

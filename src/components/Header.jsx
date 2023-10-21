@@ -44,7 +44,7 @@ function Header() {
         </li>
       </ul>
       <a href="#register" className='text-decoration-none'>
-     <button className="w-100 btn-2" type="button">Register Now </button>
+     <button className="w-100 btn-2" type="button">Register Now <i class="bi bi-chevron-double-right"></i></button>
      </a>
     </div>
   </div>

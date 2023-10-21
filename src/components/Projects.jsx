@@ -47,7 +47,7 @@ function Projects() {
         </div>
         <div className="text-center">
         <a href="#register">
-       <button className="btn-2">Register Now</button>
+       <button className="btn-2">Register Now <i class="bi bi-chevron-double-right"></i></button>
        </a>
         </div>
     </section>

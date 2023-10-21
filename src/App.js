@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-bootstrap'
 
 function App() {
   return (
-    <div className='bg-black'>
+    <div className='bg-black overflow-hidden'>
       <ToastContainer autoClose={4000} position='top-right' />
       <Header/>
       <Home/>

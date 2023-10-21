@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/TechSection.css'; // Your CSS file
+import Aos from 'aos';
 
 const technologies = [
   {
@@ -46,17 +47,20 @@ const technologies = [
 ];
 
 const TechSection = () => {
+  useEffect(() => {
+    Aos.init()
+  }, []);
   return (
     <section className="tech-section" id="tools">
       <div className="container">
-        <h2 className="section-title">Technologies and Tools</h2>
+        <h2 className="section-title">Technologies <spa className="text-main">and</spa> Tools</h2>
         <p className="section-description">
           Explore the diverse technologies and tools you'll master during the Be Practical Fullstack Web Development Internship Program. Acquire the skills to build dynamic and robust web applications while working with industry-standard tools.
         </p>
         <div className="row">
           {technologies.map((tech, index) => (
             <div key={index} className="col-12 col-md-6 col-lg-4">
-              <div className="tech-card">
+              <div className="tech-card" data-aos="fade-up"sss>
                 <h3 className="tech-title text-yellow">{tech.title}</h3>
                 <p className="tech-description">{tech.description}</p>
               </div>

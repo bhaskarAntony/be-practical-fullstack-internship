@@ -76,7 +76,7 @@ function Days() {
     <section className="container-fluid main-company-container overflow-hidden" id='days'>
       <div className="companies container-fluid">
         <div className="companies-brands-container container-fluid p-2">
-            <h1 className="banner-heading text-main">What you will learn Over 1 Month <span className="text-main">Internship Program</span></h1>
+            <h1 className="banner-heading text-main">What you will Do Over 1 Month <span className="text-main">Internship Program</span></h1>
           <div className="row">
           <Slider {...settings}>
                 {week1.map((item, index) => (
@@ -95,7 +95,7 @@ function Days() {
       </div>
       <div className="text-center">
       <a href="#register">
-       <button className="btn-2">Register Now</button>
+       <button className="btn-2">Register Now <i class="bi bi-chevron-double-right"></i></button>
        </a>
       </div>
     </section>

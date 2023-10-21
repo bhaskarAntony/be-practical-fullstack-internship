@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Registration from './Registration'
+import Aos from 'aos';
 
 const faqData = [
   {
     title:"1",
     question: "What is the application deadline?",
-    answer: "The application deadline for our internship program is [deadline date]."
+    answer: "The application deadline for our internship program is 24th-Oct-2023"
   },
   {
     title:"2",
@@ -15,7 +16,7 @@ const faqData = [
   {
     title:"3",
     question: "How long is the internship program?",
-    answer: "The internship program typically lasts for [X] weeks/months, starting on [start date] and concluding on [end date]."
+    answer: "The internship program typically lasts for 25th-Oct-2023 starting on 25th-Oct-2023"
   },
   {
     title:"4",
@@ -33,19 +34,9 @@ const faqData = [
     answer: "Yes, we organize networking events and social activities for interns to connect and build a sense of community."
   },
   {
-    title:"7",
-    question: "Is there potential for full-time employment after the internship?",
-    answer: "Outstanding interns may have the opportunity for full-time employment upon graduation or program completion."
-  },
-  {
     title:"8",
     question: "How can I contact program administrators for questions?",
-    answer: "Feel free to reach out to us at [email address] for any questions or inquiries."
-  },
-  {
-    title:"9",
-    question: "Do you offer support for international applicants?",
-    answer: "Yes, international applicants are welcome, and we provide support for visa-related matters."
+    answer: "Feel free to reach out to us at adarsh@bepracticals.com for any questions or inquiries."
   },
   {
     title:"10",
@@ -55,6 +46,9 @@ const faqData = [
 ];
 
 function FAQ() {
+  useEffect(() => {
+    Aos.init()
+  }, []);
   return (
     <section id='faq' className='p-3 p-lg-5'>
         <div className="container-fluid mt-5">
@@ -72,7 +66,7 @@ function FAQ() {
                     {
                       faqData.map((item,index) => {
                           return (
-                            <div className="accordion-item p-0 bg-transparent mt-2 mb-2 rounded-5" key={index}>
+                            <div className="accordion-item p-0 bg-transparent mt-2 mb-2 rounded-5" key={index} data-aos="fade-up">
                               <div className="accordion-header ">
                                 <div className="accordion-button collapsed  border bg-faq mb-1" data-bs-target={`#${item.title}`} data-bs-toggle="collapse">
                                     <h6 className="text-900 text-white"> { item.question } </h6>

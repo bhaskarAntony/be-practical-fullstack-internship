@@ -62,10 +62,10 @@ function Hero() {
           <div className="col-12 col-md-12 col-lg-6">
             <div className="left-hero p-lg-4 p-3 mt-lg-5 m-3">
               <h1 className="heading text-900 text-black text-white">
-                Fullstack Web Development <span className="text-main">Internship Program</span>
+                be Practicals 1 Month Fullstack <span className="text-main">Internship Program.</span>
               </h1>
               <p className="subtitle text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, cupiditate possimus eaque consectetur obcaecati id.
+              Our 1-month full-stack web development internship program offers a unique opportunity to enhance your skills in front-end and back-end development.
               </p>
               <button className="btn-2 hero-btn p-3 px-5 mt-4 bg-black">
                 Register Now <i className="bi bi-chevron-double-right"></i>
