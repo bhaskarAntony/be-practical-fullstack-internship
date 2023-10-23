@@ -9,6 +9,7 @@ import FAQ from '../components/FAQ'
 import TechSection from '../components/TechSection'
 import Responsibilities from '../components/Responsibilities'
 import ContactInformation from '../components/ContactInformation'
+import Follow from '../components/Follow'
 
 function Home() {
   return (
@@ -23,6 +24,10 @@ function Home() {
       </div>
  
        <InternshipDetailsSection/>
+      <div className="text-center d-flex justify-content-center">
+      <div className="devider"></div>
+      </div>
+      <Follow/>
       <div className="text-center d-flex justify-content-center">
       <div className="devider"></div>
       </div>

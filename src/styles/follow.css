@@ -1,0 +1,26 @@
+.follow{
+    padding: 10px;
+}
+.whatsapp{
+    background:linear-gradient(315deg, #98ffc6, #3bff767b), url(https://img.freepik.com/premium-photo/whatapps-icon-screen-smartphone-mobile-phone-3d-render-green-background_41204-25973.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.whatsapp button{
+    width: fit-content;
+}
+.telegram{
+    background:linear-gradient(315deg, #a8dbff, #00a1eb2e), url(https://t3.ftcdn.net/jpg/04/46/36/76/360_F_446367653_Gvccdy7Q3ROm8YD8299R0nbJNHz7nHxV.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
